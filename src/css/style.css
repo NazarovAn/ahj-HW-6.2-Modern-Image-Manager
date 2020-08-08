@@ -1,0 +1,137 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(39, 39, 39);
+}
+
+.frame {
+  margin: auto;
+  padding: 40px 10px;
+  background-color: gray;
+  border-radius: 40px;
+  width: 80%;
+}
+
+#container {
+  box-sizing: border-box;
+  background: linear-gradient( #bbb, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+  background-color: white;
+	background-size: 20px 20px;
+	background-position: center center;
+
+  width: 100%;
+  min-height: 500px;
+  margin: auto;
+  border: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  padding: 23px;
+}
+
+.drop-area, .upload-form {
+  width: 65%;
+  min-height: 180px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.drop-area {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 3.5rem;
+  box-sizing: border-box;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px ;
+}
+
+.name-form, .url-form {
+  display: flex;
+  width: 100%;
+}
+
+.name-form {
+  margin-bottom: 10px;
+}
+
+.url-form {
+  margin-bottom: 50px;
+}
+
+.label, .input {
+  width: 46%;
+  text-align: center;
+}
+
+.buttons-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+#file-input {
+  position: absolute;
+  top: -1000px;
+}
+
+.form-button {
+  border: 1px solid black;
+  border-radius: 50px;
+  height: 3rem;
+  text-align: center;
+  padding: .8rem 1rem;
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.img-box {
+  width: 21%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.remove-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: white;
+  text-align: center;
+  padding-top: 1px;
+  cursor: pointer;
+}
+
+.error {
+  position: absolute;
+  background-color: rgb(230, 140, 140);
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
